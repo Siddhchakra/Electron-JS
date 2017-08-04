@@ -4,14 +4,22 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "build": "tsc",
+    "build": "gulp build",
     "prestart": "npm run build",
-    "start": "electron ./dist/main.js"
+    "start": "electron ./build/main.js"
   },
   "author": "",
   "license": "ISC",
   "devDependencies": {
-    "@types/electron": "^1.6.10",
-    "electron": "1.6.11"
-  }
+    "del": "^3.0.0",
+    "electron": "1.6.11",
+    "gulp": "^3.9.1",
+    "gulp-sass": "^3.1.0",
+    "gulp-sourcemaps": "^2.6.0",
+    "gulp-typescript": "^3.2.1",
+    "gulp-util": "^3.0.8",
+    "run-sequence": "^2.1.0",
+    "typescript": "^2.4.2"
+  },
+  "dependencies": {}
 }
